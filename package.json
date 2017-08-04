@@ -4,7 +4,7 @@
   "description": "A npm module for generating hastebin links using snekfetch",
   "main": "hastebingen.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hastebin(\"test\", \"js\")"
   },
   "repository": {
     "type": "git",
