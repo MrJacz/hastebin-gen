@@ -1,0 +1,31 @@
+{
+  "name": "hastebin-gen",
+  "version": "1.1.1",
+  "description": "A npm module for generating hastebin links using snekfetch",
+  "main": "hastebingen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrJacz/hastebin-gen.git"
+  },
+  "keywords": [
+    "hastebin",
+    "snekfetch",
+    "code",
+    "hastebin-dumber",
+    "hastebin",
+    "with",
+    "snekfetch"
+  ],
+  "author": "Jacz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrJacz/hastebin-gen/issues"
+  },
+  "homepage": "https://github.com/MrJacz/hastebin-gen#readme",
+  "dependencies": {
+    "snekfetch": "^3.2.4"
+  }
+}
