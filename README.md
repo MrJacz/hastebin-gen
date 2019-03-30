@@ -12,13 +12,26 @@ https://www.npmjs.com/package/hastebin-gen
 ## Installation
 ```npm i -S hastebin-gen```
 
-## Example
-```
+## Examples
+Using `hastebin-gen` with the native site:
+```js
 const hastebin = require('hastebin-gen');
 hastebin("code", "js").then(r => {
     console.log(r); //https://hastebin.com/someurl.js
 }).catch(console.error);
 ```
 
+Using `hastebin-gen` with another [haste-server](https://github.com/seejohnrun/haste-server) site:
+```js
+const hastebin = require('hastebin-gen');
+hastebin("code", "js", "https://paste.discord.land/documents")
+.then(r => {
+        console.log(r) //https://paste.discord.land/someurl.js
+    }
+).catch(console.error);
+
+```
+
+
 ## Devs
-Jacz 
+[MrJacz](https://github.com/MrJacz) & [Fyko](https://github.com/Fyk0)
