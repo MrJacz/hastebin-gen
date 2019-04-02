@@ -17,7 +17,7 @@ https://www.npmjs.com/package/hastebin-gen
 
 **NPM:** ```npm i hastebin-gen```
 
-**Yarn:** ```yarn add hastebin-gen``
+**Yarn:** ```yarn add hastebin-gen```
 
 ## Example
 ```
