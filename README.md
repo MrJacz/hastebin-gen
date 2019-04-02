@@ -14,7 +14,9 @@ A npm module for generating hastebin links.
 https://www.npmjs.com/package/hastebin-gen
 
 ## Installation
+
 **NPM:** ```npm i hastebin-gen```
+
 **Yarn:** ```yarn add hastebin-gen``
 
 ## Example
