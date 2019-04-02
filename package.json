@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/MrJacz/hastebin-gen#readme",
   "dependencies": {
-    "snekfetch": "^3.2.4"
+    "snekfetch": "^4.0.4"
   }
 }
