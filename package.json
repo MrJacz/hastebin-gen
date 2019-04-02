@@ -1,31 +1,34 @@
 {
   "name": "hastebin-gen",
-  "version": "1.1.1",
-  "description": "A npm module for generating hastebin links using snekfetch",
-  "main": "hastebingen.js",
+  "version": "2.0.0",
+  "description": "A simple hastebin client for uploading things to hastebin.com",
+  "main": "src/index.js",
+  "types": "typings/index.d.ts",
   "scripts": {
-    "test": "hastebin(\"test\", \"js\")"
+    "prepublishOnly": "yarn lint",
+    "test": "eslint src && tslint 'typings/*.ts'",
+    "lint": "eslint --fix src && tslint --fix 'typings/*.ts'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrJacz/hastebin-gen.git"
+    "url": "git+https://github.com/MrJacz/discord.js-lavalink.git"
   },
-  "keywords": [
-    "hastebin",
-    "snekfetch",
-    "code",
-    "hastebin-dumber",
-    "hastebin",
-    "with",
-    "snekfetch"
-  ],
-  "author": "Jacz",
+  "author": "Jacz <jacz@jaczaus.me>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MrJacz/hastebin-gen/issues"
   },
   "homepage": "https://github.com/MrJacz/hastebin-gen#readme",
+  "private": false,
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1"
+  },
   "dependencies": {
-    "snekfetch": "^3.2.4"
+    "@types/node": "^11.13.0",
+    "node-fetch": "^2.3.0"
   }
 }
