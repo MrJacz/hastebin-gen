@@ -1,6 +1,6 @@
 {
   "name": "hastebin-gen",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A simple hastebin client for uploading things to hastebin.com",
   "main": "src/index.js",
   "types": "typings/index.d.ts",
