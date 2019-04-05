@@ -30,7 +30,7 @@ hastebin("code").then(r => {
 
 ## Example with a [haste-server](https://github.com/seejohnrun/haste-server) site
 ```js
-const hastebin = require('hastebin');
+const hastebin = require('hastebin-gen');
 
 hastebin("code", { url: "https://paste.example.com" }).then(r => {
     console.log(r); // https://paste.example.com/someurl.js
