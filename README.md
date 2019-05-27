@@ -19,12 +19,21 @@ https://www.npmjs.com/package/hastebin-gen
 
 **Yarn:** ```yarn add hastebin-gen```
 
-## Example
-```
+## Example with Native Site (hastebin.com)
+```js
 const hastebin = require("hastebin-gen");
 
 hastebin("code").then(r => {
-    console.log(r); //https://hastebin.com/someurl.js
+    console.log(r); // https://hastebin.com/someurl.js
+}).catch(console.error);
+```
+
+## Example with a [haste-server](https://github.com/seejohnrun/haste-server) site
+```js
+const hastebin = require('hastebin-gen');
+
+hastebin("code", { url: "https://paste.example.com" }).then(r => {
+    console.log(r); // https://paste.example.com/someurl.js
 }).catch(console.error);
 ```
 

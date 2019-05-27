@@ -1,6 +1,6 @@
 {
   "name": "hastebin-gen",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A simple hastebin client for uploading things to hastebin.com",
   "main": "src/index.js",
   "types": "typings/index.d.ts",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrJacz/discord.js-lavalink.git"
+    "url": "git+https://github.com/MrJacz/hastebin-gen.git"
   },
   "author": "Jacz <jacz@jaczaus.me>",
   "license": "MIT",
