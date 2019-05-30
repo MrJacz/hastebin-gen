@@ -4,6 +4,7 @@
   "description": "A simple hastebin client for uploading things to hastebin.com",
   "main": "src/index.js",
   "types": "typings/index.d.ts",
+  "keywords": ["hastebin", "haste-server", "haste", "paste"],
   "scripts": {
     "prepublishOnly": "yarn lint",
     "test": "eslint src",
