@@ -15,18 +15,79 @@ https://www.npmjs.com/package/hastebin-gen
 
 ## Installation
 
-**NPM:** ```npm i hastebin-gen```
+**NPM:** `npm i hastebin-gen`
 
-**Yarn:** ```yarn add hastebin-gen```
+**Yarn:** `yarn add hastebin-gen`
 
-## Example
-```
+# Options
+
+Option      | Type     | Default Value
+----------- | -------- | ----------------
+`url`       | `string` | `"https://hastebin.com"`
+`extension` | `string` | `"js"`
+
+## Examples
+
+**Using .then().catch()**
+
+```javascript
 const hastebin = require("hastebin-gen");
 
-hastebin("code").then(r => {
-    console.log(r); //https://hastebin.com/someurl.js
-}).catch(console.error);
+// You can change the extension by setting the extension option
+hastebin("code", { extension: "txt" }).then(haste => {
+    // Logs the created hastebin url to the console
+    console.log(haste); // https://hastebin.com/someid.txt
+}).catch(error => {
+    // Handle error
+    console.error(error);
+});
 ```
 
-## Devs
-[Jacz](https://github.com/MrJacz)
+**Using async/await**
+
+This is assuming that you are in a asynchronous scope
+
+[**Understanding Async/Await**](https://hackernoon.com/understanding-async-await-in-javascript-1d81bb079b2c)
+
+```javascript
+const hastebin = require("hastebin-gen");
+
+// You can change the extension by setting the extension option
+const haste = await hastebin("code", { extension: "txt" });
+
+// Logs the created hastebin url to the console
+console.log(haste); // https://hastebin.com/someid.txt
+```
+
+## Example with a custom [**haste-server**](https://github.com/seejohnrun/haste-server) instance
+
+**Using .then().catch()**
+
+```javascript
+const hastebin = require("hastebin-gen");
+
+// You can change the extension by setting the extension option
+hastebin("code", { url: "https://paste.example.com", extension: "txt" }).then(haste => {
+    // Logs the created hastebin url to the console
+    console.log(haste); // https://paste.example.com/someid.txt
+}).catch(error => {
+    // Handle error
+    console.error(error);
+});
+```
+
+**Using async/await**
+
+This is assuming that you are in a asynchronous scope
+
+[**Understanding Async/Await**](https://hackernoon.com/understanding-async-await-in-javascript-1d81bb079b2c)
+
+```javascript
+const hastebin = require("hastebin-gen");
+
+// You can change the extension by setting the extension option
+const haste = await hastebin("code", { url: "https://paste.example.com", extension: "txt" });
+
+// Logs the created hastebin url to the console
+console.log(haste); // https://paste.example.com/someid.txt
+```

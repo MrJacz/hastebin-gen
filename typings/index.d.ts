@@ -1,7 +1,7 @@
 declare module "hastebin-gen" {
     export default function hastebin(input: string, options?: HasteBinOptions): Promise<string>;
 
-    export type HasteBinOptions = {
+    export interface HasteBinOptions {
         url?: string;
         extension?: string;
     };
