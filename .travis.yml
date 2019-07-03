@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - "10"
-  - "11"
   - "12"
+  - "11"
+  - "10"
 sudo: required
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
