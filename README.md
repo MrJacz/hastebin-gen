@@ -4,8 +4,6 @@
 [![NPM version](https://badge.fury.io/js/hastebin-gen.svg)](http://badge.fury.io/js/hastebin-gen)
 [![Build Status](https://travis-ci.org/MrJacz/hastebin-gen.svg?branch=master)](https://travis-ci.org/MrJacz/hastebin-gen)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
-[![dependencies Status](https://david-dm.org/mrjacz/hastebin-gen/status.svg)](https://david-dm.org/mrjacz/hastebin-gen)
-[![devDependencies Status](https://david-dm.org/mrjacz/hastebin-gen/dev-status.svg)](https://david-dm.org/mrjacz/hastebin-gen?type=dev)
 [![NPM](https://nodei.co/npm/hastebin-gen.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hastebin-gen/)
 
 
